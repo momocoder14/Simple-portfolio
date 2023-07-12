@@ -1,0 +1,182 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #080808 url(images/main-bg.png) repeat;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #2B2B2B;
+}
+
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	margin-top: 0px;
+}
+
+
+a {
+	color: #0000FF;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+hr {
+	display: none;
+}
+
+
+.container {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+#header {
+	overflow: hidden;
+	width: 900px;
+	height: 150px;
+	padding: 0px 50px;
+	background: url(images/gradient-bg.png) no-repeat center top;
+}
+
+
+#logo {
+	float: left;
+	width: 300px;
+	height: 150px;
+}
+
+#logo h1, #logo p {
+	margin: 0px;
+	line-height: normal;
+}
+
+#logo h1 a {
+	display: block;
+	line-height: 150px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.3em;
+	color: #FFFFFF;
+}
+
+/** MENU */
+
+#menu {
+	float: right;
+	width: 600px;
+	height: 99px;
+}
+
+#menu ul {
+	float: right;
+	margin: 0px;
+	padding: 70px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	margin-left: 3em;
+}
+
+#menu a {
+	display: block;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.10em;
+	font-weight: 600;
+	color: #B6B6B6;
+}
+
+#menu .active a
+{
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+/** PAGE */
+
+
+
+/* Footer */
+
+#footer {
+	overflow: hidden;
+	width: 900px;
+	padding: 70px 50px 50px 50px;
+	background-color: #161616;
+	border-top: 6px solid #000000;
+}
+
+#footer h2
+{
+	padding: 0px 0px 50px 0px;
+	font-weight: 400;
+	color: #D3D3D3;
+}
+
+#footer p {
+	color: #4E4E4E;
+}
+
+#footer #fbox1 {
+	float: left;
+	width: 260px;
+	margin-right: 60px;
+}
+
+#footer #fbox2 {
+	float: left;
+	width: 260px;
+}
+
+#footer #fbox3 {
+	float: right;
+	width: 260px;
+}
+
+#copyright
+{
+	overflow: hidden;
+	width: 900px;
+	padding: 50px;
+}
+
+#copyright p
+{
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0,0,0,1);
+}
+
+#copyright a
+{
+	color: #4E4E4E;
+}
+
+

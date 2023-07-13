@@ -34,7 +34,7 @@ hr {
 /** HEADER */
 #header{
 	width:100%;
-	height: 75px;
+	height: 100px;
 	background: url(images/gradient-bg.png) no-repeat center top;
 }
 
@@ -67,7 +67,7 @@ hr {
 #menu {
 	float: right;
 	width: 50%;
-	height: 50px;
+	height: auto;
 }
 
 #menu ul {

@@ -8,19 +8,61 @@
     <link rel="shortcut icon" href="images/Logoicon.png" type="image/x-icon">
 </head>
 <body>
-    
+    <!--Header-->
+    <section id="header" class="container">
+        <header id="logo">
+            <h1 id="title"><a href="/">Code With Mo</a></h1>
+            <nav id="menu">
+                <ul>
+                    <li class="active"><a href="/" accesskey="1" title="">Homepage</a></li>
+                    <li><a href="designs.html" accesskey="2" title="">My Designs</a></li>
+                    <li><a href="about.html" accesskey="3" title="">About Me</a></li>
+                    <li><a href="contact.html" accesskey="4" title="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
     <!--Form-->
     
     <section id="contactMe">
-        <label for="fullName">Enter your name </label>
-        <input type="text" id="fullName"><br>
-        <label for="email">Enter email address</label>
-        <input type="text" id="email"><br>
-        <label for="messageBox">Message:</label>
-        <input type="text" id="messageBox"><br>
-        <button>Submit</button>
+        <form action="">
+            <div>
+                <label for="fName">Enter your first name </label>
+                <input type="text" id="fullName">
+            </div>
+                <br>
+            <div>
+                <label for="lName">Enter your last name </label>
+                <input type="text" id="fullName">
+            </div>
+                <br>
+            <div>
+                <label for="email">Enter email address</label>
+                <input type="email" id="email">
+            </div>
+                <br>
+            <div>
+                <label for="messageBox">Message:</label>
+                <input type="text" id="messageBox">
+            </div>
+                <br>
+            <div>
+                <label for="subscriptionBox">Subscribe for news and alerts</label>
+                <input type="checkbox" id="subscriptionBox">
+            </div>
 
+            <button>Submit</button>
+        </form>
     </section>
     
+    <!--Footer-->
+    <section>
+        <footer id="copyright">
+            <p>&copy; 2023. All rights reserved. Design by <a href="about.html" rel="nofollow">Momocoder</a>.</p>
+            <a href="/"><P>Back to home</P></a>
+        </footer>
+        </section>
+        <script src="index.js"></script>
 </body>
 </html>

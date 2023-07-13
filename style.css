@@ -29,25 +29,24 @@ hr {
 }
 
 #header {
-	overflow:hidden;
 	padding: 0px 50px;
 	margin: 0px auto;
 	width: auto;
-	height: auto;
+	height: 100px;
 	background: url(images/gradient-bg.png) no-repeat center top;
 }
 
 
 #logo {
 	float: left;
-	width: auto;
-	height: auto;
+	width: 250px;
+	height: 100px;
 }
 
 
 #logo h1 a {
 	display: block;
-	line-height: 150px;
+	line-height: 100px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: 'Archivo Narrow', sans-serif;
@@ -59,7 +58,7 @@ hr {
 #menu {
 	float: right;
 	width: auto;
-	height: auto;
+	height: 100px;
 }
 
 #menu ul {

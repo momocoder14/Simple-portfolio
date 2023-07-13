@@ -33,7 +33,7 @@ hr {
 
 /** HEADER */
 #header{
-	overflow: hidden;
+	overflow: auto;
 	width:100%;
 	height: auto;
 	background: url(images/gradient-bg.png) no-repeat center top;
@@ -43,7 +43,7 @@ hr {
 
 #title {
 	float: left;
-	height: 50px;
+	height: auto;
 	margin-top: 10px;
 	margin-left: 10px;;
 	
@@ -59,7 +59,7 @@ hr {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: 'Archivo Narrow', sans-serif;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color: #FFFFFF;
 }
 

@@ -32,6 +32,8 @@ hr {
 	overflow:hidden;
 	padding: 0px 50px;
 	margin: 0px auto;
+	width: auto;
+	height: auto;
 	background: url(images/gradient-bg.png) no-repeat center top;
 }
 

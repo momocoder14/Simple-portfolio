@@ -33,7 +33,7 @@ hr {
 
 /** HEADER */
 #header{
-	overflow: auto;
+	overflow:visible;
 	width:100%;
 	height: auto;
 	background: url(images/gradient-bg.png) no-repeat center top;

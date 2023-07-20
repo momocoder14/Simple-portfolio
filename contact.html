@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <title>Contact</title>
     <link href="style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="shortcut icon" href="images/Logoicon.png" type="image/x-icon">
@@ -16,54 +18,105 @@
             <h1 id="title"><a href="/">Code With Mo</a></h1>
             <nav id="menu">
                 <ul>
-                    <li class="active"><a href="/" accesskey="1" title="">Homepage</a></li>
+                    <li><a href="/" accesskey="1" title="">Homepage</a></li>
                     <li><a href="designs.html" accesskey="2" title="">My Designs</a></li>
                     <li><a href="about.html" accesskey="3" title="">About Me</a></li>
-                    <li><a href="contact.html" accesskey="4" title="">Contact</a></li>
+                    <li class="active"><a href="contact.html" accesskey="4" title="">Contact</a></li>
                 </ul>
             </nav>
         </header>
     </section>
-    <br>
-
-
-
-    <!--Form-->
-    <br>
-    <section id="contactMe">
-        <form action="">
-            <div>
-                <label for="fName">Enter your first name </label>
-                <input type="text" id="fullName">
-            </div>
-                <br>
-            <div>
-                <label for="lName">Enter your last name </label>
-                <input type="text" id="fullName">
-            </div>
-                <br>
-            <div>
-                <label for="email">Enter email address</label>
-                <input type="email" id="email">
-            </div>
-                <br>
-            <div>
-                <label for="messageBox">Message:</label>
-                <input type="text" id="messageBox">
-            </div>
-                <br>
-            <div>
-                <label for="subscriptionBox">Subscribe for news and alerts</label>
-                <input type="checkbox" id="subscriptionBox">
-            </div>
-
-            <button>Submit</button>
-        </form>
-    </section>
-    <br>
     
-    <!--Footer-->
+
+
+
+
+<section>
+    <div id="contactContainer">
+       <aside id="halfContainer">
+        <span class="container">
+            <img src="/images/Logoicon.png" alt="This is a logo" id="contactLogo">
+            <h1 style="float: right; padding-top: 15px;">Codewithmo</h1>
+        </span>
+        <br>
+        <span class="container1">
+            <h3 style="float: right;">Chat to us</h3>
+            <i class="fa-regular fa-beat fa-comments fa-lg"></i>
+            <p style="width: 200px;">Our friendly team is here to help</p>
+            <a href="mailto:momocoder@codewithmo.com" style="overflow: hidden;"><p>momocoder@codewithmo.com</p></a>
+        </span>
+        <br>
+        <span class="container2">
+            <h3 style="float: right;">Visit us</h3>
+            <i class="fa-solid fa-location-dot fa-bounce fa-lg"></i>
+            <address>
+            <p style="width: 120px;">97XC+47M Brusubi, The Gambia.</p>
+            </address>
+        </span>
+        <br>
+        <span class="container2">
+            <h3 style="float: right;">Call us</h3>
+            <i class="fa-solid fa-phone fa-shake fa-lg"></i>
+            <a href="tel:+2203427541">
+            <p style="width: 120px;">(220)-3427541</p>
+            </a>
+        </span>
+        </aside>
+        
+        <div id="innerContactContainer">
+       
     <br>
+    <aside id="contactMe">
+        <h2 id="contactHeader">Got ideas? We've got the skills. Let's team up.</h2>
+        <p id="contactNote">Tell us more about yourself and what you got in mind.</p>
+        <form id="contactForm" action="">
+            <div>
+                <input type="text" id="fName" placeholder="Your Name Here">
+            </div>
+                <br>
+            <div>
+                <input type="email" id="email" placeholder="you@company.com">
+            </div>
+                <br>
+            <div>
+                <textarea name="messageBox" id="messageBox" cols="30" rows="10" placeholder="Tell us a little about the project"></textarea>
+            </div>
+                <br>
+            <div>
+                <legend for="subscriptionBox" style="width: fit-content;">How can we help?
+                    <br><br>
+                    <div style="float: left;">
+                    <input type="checkbox" name="helpingWith" id="websiteDesign">
+                    <label for="websiteDesign">Website Design</label>
+                    <br>
+                    <input type="checkbox" name="helpingWith" id="uxDesign">
+                    <label for="uxDesign">UX Design</label>
+                    <br>
+                    <input type="checkbox" name="helpingWith" id="appBuild">
+                    <label for="appBuild">Building an application</label>
+                    <br>
+                    </div>
+
+                    <div style="float: right;">
+                    <input type="checkbox" name="helpingWith" id="contentCreation">
+                    <label for="contentCreation">Content Creation</label>
+                    <br>
+                    <input type="checkbox" name="helpingWith" id="other">
+                    <label for="other">Other</label>
+                    <br>
+                    </div>
+                    <br><br><br><br><br>
+                    <input type="submit" style="font-style: oblique; border-radius: 10%;background-color: dimgrey;color: aliceblue;">
+                </legend>
+            </div>
+        </form>
+    </aside>
+        </div>
+    </div>
+    
+</section>
+
+      <!--Footer-->
     <section>
         <footer id="copyright">
             <p><a href="https://github.com/momocoder14"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/momodou-jammeh-1b1aa0258"><i class="fa-brands fa-linkedin"></i></a><a href="https://instagram.com/hmm.o_kay?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a><a href="https://twitter.com/_codewithmo"><i class="fa-brands fa-twitter"></i></a></p>

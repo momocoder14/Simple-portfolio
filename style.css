@@ -1,12 +1,19 @@
+	/*Mains*/
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
 	height: fit-content;
-	width: 90%;
 	background: #080808 url(images/main-bg.png) repeat;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #2B2B2B;
+	max-width: 100%;
+	min-width: 0%;
 }
 
 
@@ -18,12 +25,15 @@ h1, h2, h3 {
 p, ol, ul {
 	margin-top: 0px;
 }
-
+p{
+	font-size: 20px;
+}
 a {
 	color: #4E4E4E;
+	text-decoration: none;
 }
 
-a:hover {
+a:hover{
 	text-decoration: none;
 }
 
@@ -32,31 +42,20 @@ hr {
 }
 
 
-/** HEADER */
+	/** HEADER */
 #header{
 	overflow: hidden;
 	width:100%;
-	height:fit-content ;
+	min-height:10%;
 	background: url(images/gradient-bg.png) no-repeat center top;
-}
-
-/** LOGO */
-
-#title {
-	float: left;
-	height: fit-content;
-	width: 50%;
-	margin-top: 10px;
-	margin-left: 10px;;
-	
-}
-#logo{
-	width: 100%;
-	height: 50px;
 	margin: 0%;
+	border-bottom:2px #161616 solid;
+	border-radius: 3px;
 }
 
-#logo h1 a {
+#title a {
+	padding: 10px;
+	float: left;
 	display: block;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -64,19 +63,22 @@ hr {
 	font-size: 1.1em;
 	color: #FFFFFF;
 }
-
-/** MENU */
+#title, #menu{
+	max-height: 200px;
+}
+	/** MENU */
 
 #menu {
 	float: right;
 	width: 50%;
-	height: fit-content;
+	min-width: 0%;
+	padding: 10px;
+	
 }
 
 #menu ul {
 	float: right;
-	margin-top:10px;
-	height: 50px;
+	max-height: 100px;
 	list-style: none;
 	line-height: normal;
 }
@@ -100,17 +102,19 @@ hr {
 
 #menu .active a
 {
-	color: #FFFFFF;
+	color: #a45b5b;
 }
 
 #menu a:hover {
+	cursor: pointer;
 	text-decoration: underline;
 }
 
 
-/* Footer */
+	/* Footer */
 #footer {
 	width: 100%;
+	max-width: 100%;
 	background-color: #161616;
 	border-top: 6px solid #000000;
 }
@@ -122,6 +126,8 @@ hr {
 #copyright
 {
 	width: 100%;
+	max-width: 100%;
+	align-items: center;
 }
 
 #copyright p
@@ -134,70 +140,77 @@ hr {
 {
 	color: #4E4E4E;
 }
-.fa-brands.fa-github{
+.fa-brands.fa-github,.fa-brands.fa-linkedin,.fa-brands.fa-instagram,.fa-brands.fa-twitter{
 	size:250px;
 	margin-right:10px;
+	
 }
 .fa-brands.fa-linkedin{
 	color:dodgerblue;
-	size:250px;
-	margin-right:10px;
+
 }
 .fa-brands.fa-instagram{
 	color:rgb(186, 59, 89);
-	size:250px;
-	margin-right:10px;
 }
 .fa-brands.fa-twitter{
 	color: aqua;
-	size:250px;
-	margin-right:10px;
+	
 }
 
-	/*Contact container*/
-#contactContainer{
-	width: 90%;
-	margin-left: 5%;
+	/*Contact page*/
+
+
+.contactContainer{
 	height: 600px;
+	width: 90%;
+	margin: 5%;
+	padding: 20px;
+	overflow: auto;
 	border: 3px solid #161616;
 	border-radius: 25px;
 	background-color: #B6B6B6;
 	position: relative;
+	
 }
-#innerContactContainer{
-	width: 57%;
-	margin-left: 40%;
-	margin-top: 3%;
-	height: 550px;
-	border: 3px solid none;
-	background-color: rgb(81, 138, 81);
-	border-radius: 25px;
-	position: absolute;
-	float: right;
+.contactSide{
+	width: 40%;
+    float: left;
+    padding: 20px;	
 }
-#halfContainer{
-	width: 33%;
-	float: left;
+.contactContainer,.contactSide{
+	max-width: 100%;
+	max-height: 100%;
 }
+
+fieldset {
+	border: none transparent;
+	outline: none;
+	background-color:rgb(81, 138, 81) ;
+  }
+  input[type="submit"]{
+	font-style: oblique; border-radius: 10%;background-color: dimgrey;color: aliceblue;
+  }
+  #fName,#email,#messageBox{
+	border: none transparent;
+	outline: none;
+	background-color:rgb(81, 138, 81) ;
+	border-bottom:1px solid;
+  }
+  legend {
+	background-color: rgb(27, 14, 14);
+	color: white;
+	padding: 5px 10px;
+  }
+  
+  input {
+	margin: 5px;
+  }
 #contactHeader{
 	margin-top: 2%;
 	font-size:30px;
 	margin-bottom: 2%;
 }
-#contactMe{
-	margin: 5%;
-}
-#contactNote{
-	font-style: oblique;
-}
-#messageBox,#fName,#email{
-	width: 100%;
-	border: none transparent;
-	outline: none;
-	border-bottom:1px solid;
-	background-color:rgb(81, 138, 81) ;
-	
-}
+
 #messageBox{
 	height: 50px;
 }
@@ -205,25 +218,75 @@ hr {
 	width: 50px;
 	margin: 3%;
 }
-.container{
-	display: inline-block; 
-	position:relative; 
-	width: 160px;
-	margin: 3%;
-}
-.container1{
-	display: inline-block; 
-	position:relative; 
-	width: 100px;
-	margin: 3%;
-}
-.container2{
-	display: inline-block; 
-	position:relative; 
-	width: 75px;
-	margin: 3%;
-}
+
 ::placeholder{
 	font-family: Arial, Helvetica, sans-serif;
 	color: #161616;
 }
+
+	/*About me page*/
+	#aboutMe{
+		color: white;
+		background-image: url(/images/pexels-hasan-albari-1229861.jpg);
+		width: 95%;
+		padding:10px;
+	}
+
+	.firstDeets{
+		width: 100%;
+		max-width: 100%;
+		position: relative;
+		overflow: hidden;
+
+	}
+	#mainTextContainer{
+		width:90%;
+		max-width: 100%;
+		height:350px;
+		overflow: hidden;
+		background-image: url(/images/pexels1.jpg);
+		background-repeat: no-repeat;
+		background-position: right;
+		
+	}
+
+	#mainText{
+		position: absolute;
+		left: 10px;
+		font-family: 'Borel';font-size: 50px;
+	}
+	pre{
+		font-size: 25px;
+		font-family: 'Times New Roman', Times, serif;
+		overflow-x: auto;
+		white-space: pre-wrap;
+		white-space: -moz-pre-wrap;
+		white-space: -pre-wrap;
+		white-space: -o-pre-wrap;
+		word-wrap: break-word;
+	  }
+	#heading{
+		display: inline-block;
+		font-size: 35px;
+		font-weight: bold;
+		font-style: oblique;
+		font-family: 'Times New Roman', Times, serif;
+	}
+	.educationSection{
+		width: 100%;
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.eduSide{
+		width: 49%;
+		float: left;
+		
+	}
+	.skills{
+		width: 20%;
+		float: left;
+		
+	}
+	.verticalLine{
+		border-left: 2px #4E4E4E solid;
+	}

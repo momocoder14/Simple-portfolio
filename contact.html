@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
-    <title>Contact</title>
-    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="shortcut icon" href="images/Logoicon.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/25afde3da2.js" crossorigin="anonymous"></script>
+	<title>Contact Me</title>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="shortcut icon" href="images/Logoicon.png" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/25afde3da2.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <!--Header-->
     <section id="header" class="container">
-        <header id="logo">
+        <header>
             <h1 id="title"><a href="/">Code With Mo</a></h1>
             <nav id="menu">
                 <ul>
@@ -32,60 +33,47 @@
 
 
 <section>
-    <div id="contactContainer">
-       <aside id="halfContainer">
-        <span class="container">
-            <img src="/images/Logoicon.png" alt="This is a logo" id="contactLogo">
-            <h1 style="float: right; padding-top: 15px;">Codewithmo</h1>
-        </span>
-        <br>
-        <span class="container1">
-            <h3 style="float: right;">Chat to us</h3>
-            <i class="fa-regular fa-beat fa-comments fa-lg"></i>
-            <p style="width: 200px;">Our friendly team is here to help</p>
-            <a href="mailto:momocoder@codewithmo.com" style="overflow: hidden;"><p>momocoder@codewithmo.com</p></a>
-        </span>
-        <br>
-        <span class="container2">
-            <h3 style="float: right;">Visit us</h3>
-            <i class="fa-solid fa-location-dot fa-bounce fa-lg"></i>
-            <address>
-            <p style="width: 120px;">97XC+47M Brusubi, The Gambia.</p>
-            </address>
-        </span>
-        <br>
-        <span class="container2">
-            <h3 style="float: right;">Call us</h3>
-            <i class="fa-solid fa-phone fa-shake fa-lg"></i>
-            <a href="tel:+2203427541">
-            <p style="width: 120px;">(220)-3427541</p>
-            </a>
-        </span>
-        </aside>
-        
-        <div id="innerContactContainer">
-       
-    <br>
-    <aside id="contactMe">
-        <h2 id="contactHeader">Got ideas? We've got the skills. Let's team up.</h2>
-        <p id="contactNote">Tell us more about yourself and what you got in mind.</p>
-        <form id="contactForm" action="">
-            <div>
+    <div class="contactContainer">
+            <div class="contactSide">
+                <div>
+                <img src="/images/Logoicon.png" alt="This is the company logo" id="contactLogo">
+                <h1>Codewithmo</h1>
+            <br>
+                <h3><i class="fa-regular fa-beat fa-comments fa-lg"></i>Chat to us</h3>
+                <p>Our friendly team is here to help
+                <br>
+                <a href="mailto:momocoder@codewithmo.com">momocoder@codewithmo.com</p></a>
+                <br>
+                <h3><i class="fa-solid fa-location-dot fa-bounce fa-lg"></i>Visit us
+                <address>
+                <p style="font-weight: normal;">97XC+47M Brusubi, The Gambia.</p>
+                </address>
+                </h3>
+                <br>
+                <h3><i class="fa-solid fa-phone fa-shake fa-lg"></i>Call us
+                <a href="tel:+2203427541" style="font-weight: normal;">
+                (220)-3427541
+                </a>
+                </h3>
+                </div>
+            </div>
+           
+            <div class="contactSide">
+                <div class="rightContactSide">
+                <h2 id="contactHeader">Got ideas? We've got the skills. Let's team up.</h2>
+                <p>Tell us more about yourself and what you got in mind.</p>
+                <form id="contactForm" action="">
+                <fieldset>
+                <legend>Contact Form</legend>
                 <input type="text" id="fName" placeholder="Your Name Here">
-            </div>
                 <br>
-            <div>
                 <input type="email" id="email" placeholder="you@company.com">
-            </div>
                 <br>
-            <div>
                 <textarea name="messageBox" id="messageBox" cols="30" rows="10" placeholder="Tell us a little about the project"></textarea>
-            </div>
                 <br>
-            <div>
-                <legend for="subscriptionBox" style="width: fit-content;">How can we help?
-                    <br><br>
-                    <div style="float: left;">
+                
+                <label>How can we help?
+                    <br>
                     <input type="checkbox" name="helpingWith" id="websiteDesign">
                     <label for="websiteDesign">Website Design</label>
                     <br>
@@ -95,23 +83,18 @@
                     <input type="checkbox" name="helpingWith" id="appBuild">
                     <label for="appBuild">Building an application</label>
                     <br>
-                    </div>
-
-                    <div style="float: right;">
                     <input type="checkbox" name="helpingWith" id="contentCreation">
                     <label for="contentCreation">Content Creation</label>
                     <br>
                     <input type="checkbox" name="helpingWith" id="other">
                     <label for="other">Other</label>
                     <br>
-                    </div>
-                    <br><br><br><br><br>
-                    <input type="submit" style="font-style: oblique; border-radius: 10%;background-color: dimgrey;color: aliceblue;">
-                </legend>
-            </div>
-        </form>
-    </aside>
-        </div>
+                    <input type="submit">
+                
+                </fieldset>
+                </form>
+                </div>
+             </div>
     </div>
     
 </section>
@@ -123,7 +106,7 @@
             <p>&copy; 2023. All rights reserved. Design by <a href="about.html" rel="nofollow">Momocoder</a>.</p>
             <a href="/"><P>Back to home</P></a>
         </footer>
-        </section>
+    </section>
         <script src="index.js"></script>
 </body>
 </html>

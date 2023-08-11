@@ -17,3 +17,10 @@ $(function()
     new WOW().init();
     $(".rotate").textrotator();
 })
+
+window.onload = function() { 
+    var el = document.getElementById('my-form'); 
+    if (el) { 
+      el.setAttribute('required', 'required'); 
+    } 
+  }

@@ -95,7 +95,7 @@
             css3: true,
             scrollingSpeed: 700,
             autoScrolling: true,
-            fitToSection: true,
+            //fitToSection: true,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
             loopBottom: false,
@@ -2061,7 +2061,7 @@
             $window
                 .off('scroll', scrollHandler)
                 .off('hashchange', hashChangeHandler)
-                .off('resize', resizeHandler);
+                // .off('resize', resizeHandler);
 
             $document
                 .off('click', SECTION_NAV_SEL + ' a')
